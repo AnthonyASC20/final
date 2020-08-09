@@ -8,10 +8,49 @@ h1 {
     text-align: center;
     margin-top: 20%;
 }
-p {
+#slogan {
     font-family: 'Lobster', cursive;
     text-align: center;
 }
+
+button {   
+    background-color: #4CAF50;   
+    width: 25%;  
+     color: orange;   
+     padding: 15px;   
+     margin: 10px 0px;  
+     border-radius: 5px;   
+     cursor: pointer;   
+      }   
+form {   
+     margin: auto;  
+     width: 50%;
+ }   
+input[type=text], input[type=password] {   
+     width: 50%;   
+     margin: 8px 0px;  
+     padding: 12px 20px;      
+     border: 2px solid green;   
+     box-sizing: border-box;   
+     border-radius: 5px;
+ }  
+button:hover {   
+     opacity: 0.7;   
+ }   
+       
+.container {   
+     padding: 25px;   
+     background-color: lightblue;  
+     display: inline-block;
+     border-radius: 5px;
+     /*margin: auto;
+     width: 50%; */
+ }
+
+ form p{
+     color: #4F5D75;
+     text-align: center;
+ }
 /*
     __ {
     background color:
