@@ -1,12 +1,30 @@
 body {
-    background-color: #75B8C8;
+    background-color: #22223B;
     color: #CDD3D5;
 }
 h1 {
+    font-size: 190%;
     font-family: 'Source Serif Pro', serif;
     text-align: center;
+    margin-top: 20%;
 }
 p {
     font-family: 'Lobster', cursive;
     text-align: center;
 }
+/*
+    __ {
+    background color:
+    font-size:
+    text-align: center
+}
+    can be used for most boxes, and may have to be adjusted accordingly.
+
+    __ {
+    border-height:
+    border-style: solid
+    background-color:
+    font-size:
+    text-align: center;
+}
+    specifically for the copyright banner on the home page
