@@ -23,4 +23,10 @@ function onSignOut() {
     });
 }
 
-fetch('https://www.googleapis.com/youtube/v3/search?key=AIzaSyAmLEzFQj-sI9IY7cc3fqTMW8bmfPcMGOA&type=video')
+fetch('https://www.googleapis.com/youtube/v3/search?key=AIzaSyAmLEzFQj-sI9IY7cc3fqTMW8bmfPcMGOA&type=video&q=')
+    .then(response =>
+        response.json()
+        )
+    .then(json =>
+        console.log(json)
+        );
