@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <script src = "script.js" defer></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="271256308933-bo56bnh1a7b4kavd82ckrvo79v7ek5lm.apps.googleusercontent.com">
 </head>
 <body>
     <h1>Tempus Salvis</h1>
@@ -17,14 +19,20 @@
     <br>
     <form>  
         <div class="container">   
-           <!-- <label>Username : </label> -->
+           <label>Username : </label>
             <input type="text" placeholder="Username" name="username" required>  
            <!-- <label>Password : </label> -->  
+           <br>
             <input type="password" placeholder="Password" name="password" required>  
             <br>
-            <button type="submit">Login</button>   
+            <button id = "loginButton">Login</button>
+            <!---->   
             <p>New Scholar? Sign up here!</p> 
         <div>
+        <div class="signs">
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            <a href="#" class="signOut" onclick="onSignOut();">Sign out</a>
+        </div>
     <form>
 </body>
 
