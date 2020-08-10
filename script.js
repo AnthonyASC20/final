@@ -1,6 +1,8 @@
 let loginButton = document.querySelector("#loginButton");
-function mouseClicked() {
-    location.replace("./afterLogin.html");
+function mouseClicked(event) {
+    event.preventDefault();
+    location.replace("afterLogin.html");
+    console.log("yes");
 }
 
 loginButton.addEventListener("click", mouseClicked);
@@ -23,8 +25,11 @@ function onSignOut() {
     });
 }
 
-fetch('https://www.googleapis.com/youtube/v3/search?key=AIzaSyAmLEzFQj-sI9IY7cc3fqTMW8bmfPcMGOA&type=video&q=')
-    .then(response =>
+let userInput = "cellular respiration"
+let khan = "khan academy"
+
+fetch('https://www.googleapis.com/youtube/v3/search?key=AIzaSyAmLEzFQj-sI9IY7cc3fqTMW8bmfPcMGOA&type=video&q=' + userInput + khan)
+        .then(response =>
         response.json()
         )
     .then(json =>
