@@ -1,11 +1,17 @@
-let loginButton = document.querySelector("#loginButton");
+let mainPageButton = document.querySelector("#mainPageButton");
 function mouseClicked(event) {
     event.preventDefault();
     location.replace("afterLogin.html");
-    console.log("yes");
 }
 
-loginButton.addEventListener("click", mouseClicked);
+mainPageButton.addEventListener("click", mouseClicked);
+
+/*let loginRedirect = document.querySelector("#loginPageButton");
+function mouseClicked2() {
+    location.replace("index.html");
+}
+
+loginRedirect.addEventListener("click", mouseClicked2);*/
 
 //called when successful user log in
 function onSignIn(googleUser) {
