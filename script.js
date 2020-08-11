@@ -1,3 +1,16 @@
+let userInput = "cellular respiration";
+let khan = "khan academy";
+
+fetch('https://www.googleapis.com/youtube/v3/search?key=AIzaSyBLeY71qZL_t-T6t8TFGPprKxuZEIEUxpY&type=video&q=' + userInput + khan)
+        .then(response =>
+        response.json()
+        )
+    .then(json =>
+        console.log(json)
+        );
+
+
+
 let mainPageButton = document.querySelector("#mainPageButton");
 function mouseClicked(event) {
     event.preventDefault();
@@ -31,13 +44,12 @@ function onSignOut() {
     });
 }
 
-let userInput = "cellular respiration"
-let khan = "khan academy"
 
-fetch('https://www.googleapis.com/youtube/v3/search?key=AIzaSyAmLEzFQj-sI9IY7cc3fqTMW8bmfPcMGOA&type=video&q=' + userInput + khan)
-        .then(response =>
-        response.json()
-        )
-    .then(json =>
-        console.log(json)
-        );
+
+// fetch('https://www.googleapis.com/youtube/v3/search?key=AIzaSyAmLEzFQj-sI9IY7cc3fqTMW8bmfPcMGOA&type=video&q=' + userInput + khan)
+//         .then(response =>
+//         response.json()
+//         )
+//     .then(json =>
+//         console.log(json)
+//         );
