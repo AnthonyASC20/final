@@ -44,14 +44,15 @@ button:hover {
      opacity: 0.7;   
  }   
        
-.container {  
+.mainPageForm {  
     min-width: 250px;
     width: 50%; 
      padding: 25px;   
      background-color: lightblue;  
      display: block;
      border-radius: 5px;
-     margin: auto;/*yall forgot to put the ;*/
+     margin: auto;
+
      /*margin: auto;
      width: 50%; */
  }
@@ -199,6 +200,22 @@ a.middle:hover:before {
         display: flex;
         flex-direction: column;
         
+    }
+    #copyright {
+        position: relative;
+        bottom: 0;
+        text-align: center;
+        width: 99vw;
+        font-family: 'Source Serif Pro', serif;
+    }
+    #testPrepHeader {
+        font-family: 'Bree Serif', serif;
+
+        vertical-align: middle;
+    }
+    #loginPageButton {
+        min-width: fit-content;
+        min-height: fit-content;
     }
 }
 
