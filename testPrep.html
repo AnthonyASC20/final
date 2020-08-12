@@ -4,6 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAoheVLUOA78vbcVF3nYhbvV8JhlZllRpA",
+        authDomain: "final-35855.firebaseapp.com",
+        databaseURL: "https://final-35855.firebaseio.com",
+        projectId: "final-35855",
+        storageBucket: "final-35855.appspot.com",
+        messagingSenderId: "10552074689",
+        appId: "1:10552074689:web:ef3a61e09726b4b17d0f40",
+        measurementId: "G-15PG8GF90J"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -39,11 +63,17 @@
         <option value="12th Grade">12th Grade</option>
         <option value="College">College</option> 
       </select> 
-      and I have a test on 
+      and I have a test in 
       <form>
-        <input type="text" placeholder="Test Subject">
+        <input id="testSubject" type="text" placeholder="">
+        </form>
+        and my test topic is 
+      <form>
+        <input id="testTopic" type="text" placeholder="">
         </form>
     .
+    <button id="submitButton">Submit</button>
+    <div class="allMessages"></div>
     </p>
     <iframe id="player" type="text/html" width="640" height="390"
     src="https://www.youtube.com/embed/2f7YwCtHcgk"
