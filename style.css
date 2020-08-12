@@ -2,11 +2,21 @@ body {
     background-color: #22223B;
     color: #CDD3D5;
 }
+#loginlogo {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+}
+
+#loginLogo img {
+    height: 150px;
+}
 h1 {
     font-size: 190%;
     font-family: 'Source Serif Pro', serif;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 15%;
 }
 #slogan {
     font-family: 'Lobster', cursive;

@@ -31,8 +31,9 @@ function updateDB(event){
         for(let i = 0; i < 4; i++) {
             console.log(json.items[i].id.videoId)
             let video = document.createElement("iframe");
-            video.setAttribute("src", `youtube.com/embed/${json.items[i].id.videoId}`)
-            document.body.appendChild(video);
+            video.setAttribute("src", `https://youtube.com/embed/${json.items[i].id.videoId}`)
+            let container = document.getElementById("videoContainer");
+            container.appendChild(video);
         }
           
     })
