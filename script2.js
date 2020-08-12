@@ -28,6 +28,8 @@ function updateDB(event){
         response.json()
        ) 
     .then(function (json) {
+        let container = document.getElementById("videoContainer");
+        container.innerHTML = "";
         for(let i = 0; i < 4; i++) {
             console.log(json.items[i].id.videoId)
             let video = document.createElement("iframe");

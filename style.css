@@ -9,14 +9,14 @@ body {
     top: 0px;
 }
 
-#loginLogo img {
+#loginlogo img {
     height: 150px;
 }
 h1 {
     font-size: 190%;
     font-family: 'Source Serif Pro', serif;
     text-align: center;
-    margin-top: 15%;
+    margin-top: 20%;
 }
 #slogan {
     font-family: 'Lobster', cursive;
@@ -132,7 +132,9 @@ position: relative;
 bottom: 0;
 text-align: center;
 width: 99vw;
-  font-family: 'Source Serif Pro', serif;
+font-family: 'Source Serif Pro', serif;
+
+
 
   
 }
@@ -225,6 +227,9 @@ a.middle:hover:before {
     #loginPageButton {
         min-width: fit-content;
         min-height: fit-content;
+    }
+    #loginlogo img {
+        height: 60px;
     }
 }
 
