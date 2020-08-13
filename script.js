@@ -21,12 +21,8 @@ function onSignIn(googleUser) {
     console.log(profile.getImageUrl());
     console.log(profile.getEmail());
 
-    let googleButton = document.querySelector(".g-signin2");
-    function mouseClicked(event) {
-    event.preventDefault();
     location.replace("afterLogin.html");
-    }
-    googleButton.addEventListener("click", mouseClicked);
+
 }
 
 //called when "sign out" button clicked
