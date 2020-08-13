@@ -1,11 +1,17 @@
-fetch("https://uselessfacts.jsph.pl/random.json?language=en")
+
+fetch("https://type.fit/api/quotes")
   .then(function(response) {
     return response.json();
   })
   .then(function(data) {
-    let factDiv = document.querySelector(".factOTD");
-    let funfact = data.text;
+    let factOTD = document.querySelector("#factOTD");
+    let i = Math.floor(Math.random() * 1644);
+    let quote = data[i].text;
+    let author = data[i].author;
+    if (author == "null") {
+      author = "John Doe";}
     let p = document.createElement("p");
-    p.innerHTML = "Fact of the Day: " + funfact ;
-    factDiv.appendChild(p);
+    p.innerHTML = '"' +  quote + '"' + " - " + author;
+    factOTD.appendChild(p);
+    console.log(p);
   });
