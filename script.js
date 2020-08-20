@@ -20,6 +20,9 @@ function onSignIn(googleUser) {
     console.log(profile.getName());
     console.log(profile.getImageUrl());
     console.log(profile.getEmail());
+
+    location.replace("afterLogin.html");
+
 }
 
 //called when "sign out" button clicked
