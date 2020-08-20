@@ -21,7 +21,19 @@ h1 {
 #slogan {
     font-family: 'Lobster', cursive;
     text-align: center;
-}
+    opacity: 0;
+    animation: fadeIn1 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+  }
+  @keyframes fadeIn1 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
 
 #mainPageButton {   
     background-color: #22223B;   
