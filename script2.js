@@ -30,7 +30,7 @@ function updateDB(event){
     .then(function (json) {
         let container = document.getElementById("videoContainer");
         container.innerHTML = "";
-        for(let i = 0; i < 4; i++) {
+        for(let i = 0; i < 5; i++) {
             console.log(json.items[i].id.videoId)
             let video = document.createElement("iframe");
             video.setAttribute("src", `https://youtube.com/embed/${json.items[i].id.videoId}`)
