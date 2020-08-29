@@ -21,7 +21,7 @@ function onSignIn(googleUser) {
     console.log(profile.getImageUrl());
     console.log(profile.getEmail());
 
-    location.replace("afterLogin.html");
+    // location.replace("afterLogin.html");
 
 }
 
