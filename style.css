@@ -376,3 +376,65 @@ a.middle:hover:before {
     font-family: 'Baloo Tamma 2', cursive;
     text-align: center;
 }
+
+#teamHeader {
+    margin: 10px;
+    margin-top: 0%;
+    font-family: 'Source Serif Pro', serif;
+opacity: 0;
+  animation: fadeIn1 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+}
+@keyframes fadeIn1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+#teamContainer {
+    border-radius: 10px;
+    background-color: lightblue;
+    margin: auto;
+width: 50%;
+    
+    
+}
+
+#teamContainer h2 {
+    color: #F2F5FF;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+#teamContainer li{
+    color:#05204A;
+    font-family: 'Baloo Tamma 2', cursive;    
+}
+
+#teamContainer a{
+    text-decoration: none;
+    color: #F2F5FF;
+}
+
+#teamContainer i{
+    margin: 10px;
+}
+
+#contactInfo {
+    text-align: center;
+}
+
+#names {
+    display: inline-block;
+    position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+}
+
+.animate__animated animate__backInLeft {
+    animate-delay: 3.5s;
+}
