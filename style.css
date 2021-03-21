@@ -470,7 +470,7 @@ a.middle:hover:before {
     border-right: .15em solid orange; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    letter-spacing: .05em; /* Adjust as needed */
     animation: 
       typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
@@ -617,4 +617,27 @@ padding: 15px;
     height: 100px;
     border-radius: 10px;
     vertical-align: middle;
+}
+
+#youtubeTransition {
+    font-size: 20px;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+#youtubeTransition a{
+    margin: 15px;
+    color: mintcream;
+}
+
+#youtubePageTransitions {
+    font-size: 20px;
+    font-family: 'Baloo Tamma 2', cursive;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#youtubePageTransitions a{
+    margin: 15px;
+    color: ##1A1423;
 }
