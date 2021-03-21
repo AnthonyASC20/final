@@ -318,29 +318,23 @@ a.middle:hover:before {
 #testPrepTop {
     text-align: center;
     background: mintcream;
-    padding: 70px;
+    height: 60vh;
     width: 50%;   
-}
-
-#testPrepTop img{
-    width: 50%;
-    float: right;
-    
 }
 
 #bookshelfPic img{
    float: right;
    width: 50%; 
-   height: 64vh;
+   height: 60vh;
 }
 
 #bookshelfPic p{
   position: absolute;
-  top: 25%;
   left: 50%;
   color:mintcream;
   font-family: 'Alegreya', serif;
-  padding-left: 10px;
+  padding: 100px 0;
+  text-align: center;
 
 }
 
@@ -349,8 +343,8 @@ a.middle:hover:before {
 }
 
 #prompts {
-    text-align: left;
-    margin-left: 20%;
+    
+    
 }
 
 #testPrepText, form {
@@ -521,7 +515,7 @@ a.middle:hover:before {
 opacity: 0;
   animation: fadeIn1 2s;
   animation-fill-mode: forwards;
-  animation-delay: 3s;
+  animation-delay: 1.75s;
 }
 @keyframes fadeIn1 {
   0% {
@@ -632,9 +626,7 @@ padding: 15px;
 #youtubePageTransitions {
     font-size: 20px;
     font-family: 'Baloo Tamma 2', cursive;
-    position: absolute;
-    top: 0;
-    left: 0;
+    text-align: left;
 }
 
 #youtubePageTransitions a{
