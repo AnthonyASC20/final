@@ -18,8 +18,8 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    color: #F2F5FF;
     position: absolute;
+    color: #F2F5FF;
     top: 0px;
 }
 
@@ -98,6 +98,7 @@ h1 {
     animation: fadeIn1 2s;
     animation-fill-mode: forwards;
     animation-delay: 1s;
+    font-size: 20px;
   }
   @keyframes fadeIn1 {
     0% {
@@ -197,7 +198,7 @@ button:hover {
 }
 
 #submitButton {
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
  
@@ -295,7 +296,7 @@ a.middle:before {
         height: 2px;
         bottom: 0;
         left: 0;
-        background-color: #FFF;
+        background-color: #1A1423;
         visibility: hidden;
         transform: scaleX(0);
         transition: all 0.3s ease-in-out;
@@ -330,7 +331,17 @@ a.middle:hover:before {
 #bookshelfPic img{
    float: right;
    width: 50%; 
-   height: 71vh;
+   height: 64vh;
+}
+
+#bookshelfPic p{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  color:mintcream;
+  font-family: 'Alegreya', serif;
+  padding-left: 10px;
+
 }
 
 #videoContainer {
@@ -576,4 +587,34 @@ padding: 15px;
 
 #resourcesHeader {
     margin-top: 0%;
+}
+
+.studyTips {
+    font-size: 20px;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+
+.studyTips img{
+    float: right;
+    height: 200px;
+    padding: 5px;
+}
+
+#testDates {
+    display: table; 
+    margin: 0 auto;
+    text-align: left;
+}
+
+#testsHeaders{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#testsHeaders img{
+    height: 100px;
+    border-radius: 10px;
+    vertical-align: middle;
 }
