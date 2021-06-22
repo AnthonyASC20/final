@@ -68,6 +68,14 @@ h1.animate__animated{
     text-align: center;
 }*/
 
+.signOut {
+    text-align: center;
+}
+
+div.abcRioButton.abcRioButtonLightBlue {
+    margin: auto;
+}
+
 #aboutUs img{
     border-radius: 5px;
     height: 50px;
@@ -199,6 +207,12 @@ button:hover {
 
 #submitButton {
     border-radius: 10px;
+    background-color: #1A1423;
+    color: mintcream;
+    border-color: transparent;
+    margin: 15px;
+    font-family: 'Baloo Tamma 2', cursive;
+    ;
 }
 
  
@@ -611,6 +625,7 @@ padding: 15px;
     height: 100px;
     border-radius: 10px;
     vertical-align: middle;
+    margin-left: 20px;
 }
 
 #youtubeTransition {
@@ -631,5 +646,10 @@ padding: 15px;
 
 #youtubePageTransitions a{
     margin: 15px;
-    color: ##1A1423;
+    color: #1A1423;
+}
+
+.videoContainer {
+    margin: 10px;
+    border: none;
 }

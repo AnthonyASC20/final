@@ -35,7 +35,9 @@ function updateDB(event){
             let video = document.createElement("iframe");
             video.setAttribute("src", `https://youtube.com/embed/${json.items[i].id.videoId}`)
             let container = document.getElementById("videoContainer");
+            video.classList = "videoContainer";
             container.appendChild(video);
+            
         }
           
     })
